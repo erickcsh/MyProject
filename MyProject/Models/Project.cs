@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MyProject.Models
 {
-    public enum RateTypes
+    public enum RateType
     {
         PerHour,
         FixAmount
@@ -21,7 +21,9 @@ namespace MyProject.Models
         public DateTime OfferEndDate { get; set; }
         public double Rate { get; set; }
         public bool Prepaid { get; set; }
-        public string rateType { get; set; }
+        public RateType rateType { get; set; }
         public double Budget { get; set; }
+
+        public virtual ICollection<Offer> Offers { get; set; }
     }
 }

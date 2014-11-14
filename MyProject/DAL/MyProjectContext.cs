@@ -15,5 +15,6 @@ namespace MyProject.DAL
         }
 
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Company> Company { get; set; }
     }
 }
