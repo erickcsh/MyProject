@@ -10,7 +10,7 @@ namespace MyProject.DAL
 {
     public class MyProjectContext : DbContext
     {
-        public MyProjectContext() : base("MyProjectContext")
+        public MyProjectContext() : base("DefaultConnection")
         {
         }
 
